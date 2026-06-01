@@ -8,6 +8,8 @@ dependencies = [
     "confluent-kafka>=2.14.0",
     "fastapi>=0.136.3",
     "motor>=3.7.1",
+    "prometheus-fastapi-instrumentator>=8.0.0",
     "pydantic[email]>=2.13.4",
+    "python-json-logger>=4.1.0",
     "uvicorn>=0.48.0",
 ]
