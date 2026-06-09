@@ -5,7 +5,7 @@
 
 [🇧🇷 Leia em Português](../README.md)
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Project Status](https://img.shields.io/badge/Status-Under%20development-yellow?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.14+-blue?style=for-the-badge&logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Kafka](https://img.shields.io/badge/Apache_Kafka-4.3.0-231F20?style=for-the-badge&logo=apache-kafka)
