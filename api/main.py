@@ -18,7 +18,7 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting IMOB down... cleaning Kafka queue.", extra={"action": "shutdown"})
     producer.flush()
 
-app = FastAPI(title="API de Captura de Leads Imobiliários", lifespan=lifespan)
+app = FastAPI(title="IMOB: API de Captura de Leads Imobiliários", lifespan=lifespan)
 
 Instrumentator().instrument(app).expose(app)
 
