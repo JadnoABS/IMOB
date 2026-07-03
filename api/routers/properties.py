@@ -3,6 +3,7 @@ from fastapi import APIRouter, UploadFile, File, Form, Depends
 from bson import ObjectId
 from api.database import properties_collection
 from api.dependencies import get_current_realtor
+from core.env import SERVER_URL
 
 router = APIRouter(prefix="/properties", tags=["Properties"])
 
@@ -22,7 +23,7 @@ async def create_property(
     prop_dict = {
         "title": title,
         "address": {"street": street, "city": city, "state": state, "zip_code": zip_code, "country": "BR"},
-        "image_url": f"https://localhost:8000/uploads/{image.filename}",
+        "image_url": f"{SERVER_URL}/uploads/{image.filename}",
         "realtor_email": realtor_email
     }
     result = await properties_collection.insert_one(prop_dict)
